@@ -68,8 +68,8 @@ module Jekyll
         super(site, source, dir, name)
       end
 
-      def containing_dir(source, dir)
-        return File.join(source, dir, @config.containing_dir)
+      def containing_dir(dir)
+        return File.join(dir, @config.containing_dir)
       end
 
       def relative_path
